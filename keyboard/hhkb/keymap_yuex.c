@@ -83,21 +83,21 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
      * ,------------------------------------------------------------.
      * |  `| F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|   |    |
      * |------------------------------------------------------------|
-     * |     |HME|MSU|END|   |   |   |MTE|VDW|VUP|Prt|PgU|PgD|Insert|
+     * |     |HME|MSU|END|   |   |   |MTE|VDW|VUP|   |PgU|PgD| Print|
      * |------------------------------------------------------------|
-     * |      |MSL|MSD|MSR|WHD|   |Lft|Dwn| Up|Rgt|F12|   |         |
+     * |      |MSL|MSD|MSR|WHD|   |Lft|Dwn| Up|Rgt|F12|  `|   Insert|
      * |------------------------------------------------------------|
-     * |        |WHL|   |WHR|   |WHU|   |BT1|AL2|BT2|AL1|      |    |
+     * |        |WHL|   |WHR|   |WHU|   |BT1|AL2|BT2|AL1|      |SLEP|
      * `------------------------------------------------------------'
-     *       |   |     |                       |     |SLP|
+     *       |   |     |                       |     |   |
      *       `-------------------------------------------'
      */
     [1] = \
     KEYMAP( GRV,  F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9, F10, F11, F12,TRNS,TRNS, \
-           TRNS,HOME,MS_U, END,TRNS,TRNS,TRNS,MUTE,VOLD,VOLU,PSCR,PGUP,PGDN, INS,      \
-           TRNS,MS_L,MS_D,MS_R,WH_D,TRNS,LEFT,DOWN,  UP,RGHT, F12,TRNS,TRNS,           \
-           TRNS,WH_L,TRNS,WH_R,TRNS,WH_U,TRNS,BTN1,ACL2,BTN2,ACL1,TRNS,TRNS,           \
-                TRNS,TRNS,          TRNS,               TRNS,SLEP),
+           TRNS,HOME,MS_U, END,TRNS,TRNS,TRNS,MUTE,VOLD,VOLU,TRNS,PGUP,PGDN,PSCR,      \
+           TRNS,MS_L,MS_D,MS_R,WH_D,TRNS,LEFT,DOWN,  UP,RGHT, F12, GRV, INS,           \
+           TRNS,WH_L,TRNS,WH_R,TRNS,WH_U,TRNS,BTN1,ACL2,BTN2,ACL1,TRNS,SLEP,           \
+                TRNS,TRNS,          TRNS,               TRNS,TRNS),
 
     /* Layer #: TRNS */
     KEYMAP(TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, \
