@@ -83,20 +83,20 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
      * ,------------------------------------------------------------.
      * |  `| F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|   |    |
      * |------------------------------------------------------------|
-     * |     |HME|MSU|END|   |   |   |MTE|VDW|VUP|   |PgU|PgD| Print|
+     * |     |  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|PgU|PgD| Print|
      * |------------------------------------------------------------|
-     * |      |MSL|MSD|MSR|WHD|   |Lft|Dwn| Up|Rgt|F12|  `|   Insert|
+     * |      |HME|WHD|END|   |   |Lft|Dwn| Up|Rgt|F12|  `|   Insert|
      * |------------------------------------------------------------|
-     * |        |WHL|   |WHR|   |WHU|   |BT1|AL2|BT2|AL1|      |SLEP|
+     * |        |WHL|WHU|WHR|   |   |   |BT1|AL2|BT2|AL1|      |SLEP|
      * `------------------------------------------------------------'
      *       |   |     |                       |     |   |
      *       `-------------------------------------------'
      */
     [1] = \
     KEYMAP( GRV,  F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9, F10, F11, F12,TRNS,TRNS, \
-           TRNS,HOME,MS_U, END,TRNS,TRNS,TRNS,MUTE,VOLD,VOLU,TRNS,PGUP,PGDN,PSCR,      \
-           TRNS,MS_L,MS_D,MS_R,WH_D,TRNS,LEFT,DOWN,  UP,RGHT, F12, GRV, INS,           \
-           TRNS,WH_L,TRNS,WH_R,TRNS,WH_U,TRNS,BTN1,ACL2,BTN2,ACL1,TRNS,SLEP,           \
+           TRNS,   1,   2,   3,   4,   5,   6,   7,   8,   9,   0,PGUP,PGDN,PSCR,      \
+           TRNS,HOME,WH_D, END,TRNS,TRNS,LEFT,DOWN,  UP,RGHT, F12, GRV, INS,           \
+           TRNS,WH_L,WH_U,WH_R,TRNS,TRNS,TRNS,BTN1,ACL2,BTN2,ACL1,TRNS,SLEP,           \
                 TRNS,TRNS,          TRNS,               TRNS,TRNS),
 
     /* Layer #: TRNS */
