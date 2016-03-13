@@ -61,42 +61,42 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
 #endif
     /* Layer 0: Default Layer
      * ,------------------------------------------------------------.
-     * |Esc|  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  -|  =|Del|BDel|
+     * |Esc|  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|  -|  =|  `|BDel|
      * |------------------------------------------------------------|
      * |Tab  |  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|  [|  ]|     \|
      * |------------------------------------------------------------|
      * |Ctrl  |  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  '|    Enter|
      * |------------------------------------------------------------|
-     * |Shift   |  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift |   `|
+     * |Shift   |  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift |Ctrl|
      * `------------------------------------------------------------'
      *       |Gui|Alt  |       Space(Fn1)      |Alt  |Gui|
      *       `-------------------------------------------'
      */
     [0] = \
-    KEYMAP( ESC,   1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS, EQL, DEL,BSPC, \
+    KEYMAP( ESC,   1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS, EQL, GRV,BSPC, \
             TAB,   Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,LBRC,RBRC,BSLS,      \
            LCTL,   A,   S,   D,   F,   G,   H,   J,   K,   L,SCLN,QUOT, ENT,           \
-           LSFT,   Z,   X,   C,   V,   B,   N,   M,COMM, DOT,SLSH, FN9, GRV,           \
+           LSFT,   Z,   X,   C,   V,   B,   N,   M,COMM, DOT,SLSH, FN9,RCTL,           \
                 LGUI,LALT,           FN0,               RALT,RGUI),
 
     /* Layer 1: Yuex Layer
      * ,------------------------------------------------------------.
-     * |  `| F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|   |    |
+     * |SLP| F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|DEL|BDEL|
      * |------------------------------------------------------------|
-     * |     |  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|PgU|PgD| Print|
+     * |     |  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|PgU|PgD|Insert|
      * |------------------------------------------------------------|
-     * |      |HME|WHD|END|   |   |Lft|Dwn| Up|Rgt|F12|  `|   Insert|
+     * |      |HME|WHD|END|   |   |Lft|Dwn| Up|Rgt|F12|  `|    Print|
      * |------------------------------------------------------------|
-     * |        |WHL|WHU|WHR|   |   |   |BT1|AL2|BT2|AL1|      |SLEP|
+     * |        |WHL|WHU|WHR|   |   |   |BT1|AL2|BT2|AL1|      |    |
      * `------------------------------------------------------------'
      *       |   |     |                       |     |   |
      *       `-------------------------------------------'
      */
     [1] = \
-    KEYMAP( GRV,  F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9, F10, F11, F12,TRNS,TRNS, \
-           TRNS,   1,   2,   3,   4,   5,   6,   7,   8,   9,   0,PGUP,PGDN,PSCR,      \
-           TRNS,HOME,WH_D, END,TRNS,TRNS,LEFT,DOWN,  UP,RGHT, F12, GRV, INS,           \
-           TRNS,WH_L,WH_U,WH_R,TRNS,TRNS,TRNS,BTN1,ACL2,BTN2,ACL1,TRNS,SLEP,           \
+    KEYMAP(SLEP,  F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9, F10, F11, F12, DEL,BSPC, \
+           TRNS,   1,   2,   3,   4,   5,   6,   7,   8,   9,   0,PGUP,PGDN, INS,      \
+           TRNS,HOME,WH_D, END,TRNS,TRNS,LEFT,DOWN,  UP,RGHT, F12, GRV,PSCR,           \
+           TRNS,WH_L,WH_U,WH_R,TRNS,TRNS,TRNS,BTN1,ACL2,BTN2,ACL1,TRNS,TRNS,           \
                 TRNS,TRNS,          TRNS,               TRNS,TRNS),
 
     /* Layer #: TRNS */
