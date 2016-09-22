@@ -11,4 +11,10 @@ tags
 *~
 build/
 *.bak
+<<<<<<< HEAD
 __*
+=======
+.DS_Store
+!converter/*/binary/*.hex
+!keyboard/*/binary/*.hex
+>>>>>>> master

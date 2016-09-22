@@ -8,9 +8,9 @@
  * Fn action definition
  */
 #ifdef KEYMAP_SECTION_ENABLE
-const uint16_t fn_actions[] __attribute__ ((section (".keymap.fn_actions"))) = {
+const action_t fn_actions[] __attribute__ ((section (".keymap.fn_actions"))) = {
 #else
-const uint16_t fn_actions[] PROGMEM = {
+const action_t fn_actions[] PROGMEM = {
 #endif
     /*  FN# keycode
      *
@@ -85,9 +85,9 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
      * |------------------------------------------------------------|
      * |     |  1|  2|  3|  4|  5|  6|  7|  8|  9|  0|PgU|PgD|Insert|
      * |------------------------------------------------------------|
-     * |      |HME|WHD|END|   |   |Lft|Dwn| Up|Rgt|F12|  `|    Print|
+     * |      |HME|WHU|WHD|END|   |Lft|Dwn| Up|Rgt|F12|  `|    Print|
      * |------------------------------------------------------------|
-     * |        |WHL|WHU|WHR|   |   |   |BT1|AL2|BT2|AL1|      | SLP|
+     * |        |   |   |   |   |   |   |BT1|AL2|BT2|AL1|      | SLP|
      * `------------------------------------------------------------'
      *       |   |     |                       |     |   |
      *       `-------------------------------------------'
@@ -95,8 +95,8 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
     [1] = \
     KEYMAP(ESC ,  F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9, F10, F11, F12, DEL,BSPC, \
            TRNS,   1,   2,   3,   4,   5,   6,   7,   8,   9,   0,PGUP,PGDN, INS,      \
-           TRNS,HOME,WH_D, END,TRNS,TRNS,LEFT,DOWN,  UP,RGHT, F12, GRV,PSCR,           \
-           TRNS,WH_L,WH_U,WH_R,TRNS,TRNS,TRNS,BTN1,ACL2,BTN2,ACL1,TRNS,SLEP,           \
+           TRNS,HOME,WH_U,WH_D, END,TRNS,LEFT,DOWN,  UP,RGHT, F12, GRV,PSCR,           \
+           TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,BTN1,ACL2,BTN2,ACL1,TRNS,SLEP,           \
                 TRNS,TRNS,          TRNS,               TRNS,TRNS),
 
     /* Layer #: TRNS */
